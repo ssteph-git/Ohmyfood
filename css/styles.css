@@ -1,29 +1,52 @@
 html {
     box-sizing: border-box;
-  }
-  /* *, *:before, *:after {
+}
+
+/* *, *:before, *:after {
     box-sizing: inherit;
   } */
 
-  body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-  /*Header***************************************/
-  .logo{
+/*Header***************************************/
+.logo {
     display: flex;
     justify-content: center;
     box-shadow: 0 8px 6px -6px rgb(138, 134, 134);
-    /* box-shadow: 0 8px 6px -6px rgba(233, 44, 44, 0.863); */
-    /* width: 100%; */
 }
 
-.image_logo{
+.image_logo {
     margin-top: 20px;
     margin-bottom: 13px;
-    max-width: 160px; /*reduction de l'image*/
-    height: auto; /*conserve le ratio de l'image*/
-    /* padding-top: 40px;
-    margin-left: 20px; */
-  }
+    max-width: 160px;
+    /*reduction de l'image*/
+    height: auto;
+    /*conserve le ratio de l'image*/
+}
+
+/*Header*************************************************/
+
+/*Localisation******************************************/
+.localisation {
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    opacity: 0.8;
+}
+
+.localisation i {
+    margin-left: -28px;
+    margin-top: 6px;
+}
+
+.localisation p {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+/**************************************************************/
