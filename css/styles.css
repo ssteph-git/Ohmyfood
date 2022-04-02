@@ -11,6 +11,11 @@ body {
     font-size: 16px;
 }
 
+h3{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+}
+
 /*Header***************************************/
 .logo {
     display: flex;
@@ -155,20 +160,36 @@ body {
         padding-top: 25px;
         padding-bottom: 25px;
         margin-bottom: 15px;
+        font-weight: bolder;
+        box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
+
+    }
+
+    .fond_choix{
+        background-color: #F5EDFF;
     }
   
     .question {
         padding-left: 30px;
         margin-top: 8px;
         text-align: center;
+        text-align: left;
         flex-grow: 1;
     }
   
-  .fa-mobile-alt, .fa-list-ul, .fa-store {
+  .fa-mobile-alt, .fa-list-ul {
     margin-left: 20px;
     font-size: 20px;
     margin-top: 4px;
 }
+
+.fa-store {
+    color: #9356DC;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
  /*----1-----------------------------------*/
 
  
@@ -199,14 +220,14 @@ body {
   
 /*------------Menu1-----------------------------*/
 .Menu {
-    height: 63vw;
+    height: 60vw;
     width: 85%;
     margin: auto;
     background-color: white;
     box-shadow: rgb(153 153 153 / 32%) 0px 5px 20px;
     border-radius: 15px;
 
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     /* padding: 4px; */
 }
 
@@ -275,3 +296,49 @@ padding: 5px;
 
   
   /****MENU*****************************************/
+
+
+  /****Footer*****************************************/
+.bloc_footer{
+
+}
+
+footer h3{
+    /* margin-top: 70px;
+    margin-left: 25px; */
+    /* margin-top: 51px; */
+    /* margin-left: -15px; */
+}
+
+.contact{
+    margin-left: -15px;
+}
+
+.contact .fa-utensils, .fa-hands-helping{
+    margin-right: 10px;
+}
+
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    /* justify-content: center; */
+    margin-top: 46px;
+    background-color: #353535;
+    color: white;
+}
+
+.contact ul li{
+    display: flex;
+    line-height: 25px;
+}
+
+.contact ul li a{
+color: white;
+text-decoration: none;
+}
+
+
+
+
+/****Footer*****************************************/
