@@ -11,6 +11,20 @@ body {
     font-size: 16px;
 }
 
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    width: 80%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h4{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+}
+
+
 /*Header***************************************/
 .en-tete{
     display: flex;
@@ -44,3 +58,170 @@ body {
 
 
 /*Header*************************************************/
+
+/**Bloc Photo presentation************************/
+.photo-presentation {
+display: flex;
+justify-content: center;
+flex-direction: column;
+/* width: 100%; */
+}
+
+.photo-presentation img{
+    /* height: 73%; */
+    width: 100%;
+    height: 68vw;
+}
+    
+
+/**Bloc Photo presentation************************/
+
+/**Bloc Menu**************************************/
+.bloc-menu{
+    /* height: 800px; */
+    background-color: #F6F6F6;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: -55px;
+}
+
+.bloc-menu img{
+    /* height: 73%; */
+    width: 100%;
+    height: 68vw;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 22px;
+}
+
+.jaime{
+    font-size: 23.5px;
+}
+    
+
+/**Bloc Menu**************************************/
+h2{
+    border-bottom: 3px solid #99e2d0;
+    line-height: 30px;
+    width: 50px;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+.titre-2{
+    margin-top: 14px;
+}
+
+.titre-3{
+    margin-top: 27px;
+}
+
+/**--Sous menu---------------------------------**/
+.sous-menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+}
+
+.plat {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: white;
+    width: 90%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
+}
+
+
+.details{
+    width: 80%;
+}
+
+.details p{
+    /* margin-left: 25px; */
+    font-size: 15px;
+}
+
+h3{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    /* margin-left: 25px; */
+    font-size: 18px;
+}
+
+.prix{
+    padding-top: 39px;
+    padding-left: 10px;
+}
+
+.commander
+  {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 35px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: 0px;
+    color: white;
+    box-shadow: 0 8px 6px -6px rgb(138, 134, 134);
+  }
+
+  /****Footer*****************************************/
+.bloc_footer{
+
+}
+
+footer h3{
+    /* margin-top: 70px;
+    margin-left: 25px; */
+    /* margin-top: 51px; */
+    /* margin-left: -15px; */
+}
+
+.contact{
+    margin-left: -15px;
+}
+
+.contact .fa-utensils, .fa-hands-helping{
+    margin-right: 10px;
+}
+
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    /* justify-content: center; */
+    /* margin-top: 46px; */
+    margin:unset;
+    background-color: #353535;
+    color: white;
+}
+
+.contact ul li{
+    display: flex;
+    line-height: 25px;
+}
+
+.contact ul li a{
+color: white;
+text-decoration: none;
+}
+
+
+
+
+/****Footer*****************************************/
