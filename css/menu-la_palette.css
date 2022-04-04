@@ -32,9 +32,6 @@ h4{
 }
 
 .logo {
-    /* display: flex;
-    justify-content: center; */
-    /* box-shadow: 0 8px 6px -6px rgb(138, 134, 134); */
     width: 80%;
     text-align: center;
     margin-left: -40px;
@@ -44,9 +41,7 @@ h4{
     margin-top: 20px;
     margin-bottom: 13px;
     max-width: 160px;
-    /*reduction de l'image*/
     height: auto;
-    /*conserve le ratio de l'image*/
 }
 
 .retour {
@@ -64,11 +59,9 @@ h4{
 display: flex;
 justify-content: center;
 flex-direction: column;
-/* width: 100%; */
 }
 
 .photo-presentation img{
-    /* height: 73%; */
     width: 100%;
     height: 68vw;
 }
@@ -78,14 +71,12 @@ flex-direction: column;
 
 /**Bloc Menu**************************************/
 .bloc-menu{
-    /* height: 800px; */
     background-color: #F6F6F6;
     border-radius: 50px 50px 0px 0px;
     margin-top: -55px;
 }
 
 .bloc-menu img{
-    /* height: 73%; */
     width: 100%;
     height: 68vw;
 }
@@ -145,7 +136,6 @@ h2{
 .plat {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     background-color: white;
     width: 90%;
     padding-bottom: 10px;
@@ -154,22 +144,88 @@ h2{
     border-radius: 15px;
     margin-bottom: 15px;
     box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
+    animation: effet-plat 2s; /*Durée totale de l'animation*/
+    opacity: 0; /*Opacité à 0: au commencement de l'animation*/
 }
 
+/*---Animation des plats------------------------****/
+.plat:nth-child(2){
+    animation-delay: 0.1s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(3){
+    animation-delay: 0.4s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(4){
+    animation-delay: 0.7s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(6){
+    animation-delay: 0.1s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(7){
+    animation-delay: 0.4s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(8){
+    animation-delay: 0.7s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(10){
+    animation-delay: 0.1s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(11){
+    animation-delay: 0.4s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+.plat:nth-child(12){
+    animation-delay: 0.7s;/*temps où l'animation commence*/
+    transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
+    animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+}
+
+ @keyframes effet-plat {
+      0%{
+        opacity: 0;
+      }
+
+      100%{
+       opacity: 1;
+       transform: translateY(0px); /*Permet de recentrer mes plats*/
+      }
+    }
+/*---Animation des plats------------------------****/
 
 .details{
     width: 80%;
 }
 
 .details p{
-    /* margin-left: 25px; */
     font-size: 15px;
 }
 
 h3{
     margin-top: 12px;
     margin-bottom: 5px;
-    /* margin-left: 25px; */
     font-size: 18px;
 }
 
@@ -196,25 +252,11 @@ h3{
   }
 
   .commander:hover{
-    
-    /* filter: brightness(1.30); */
     filter: drop-shadow(0px 3px 4px black);
-   /* animation: bts 2s; */
    opacity: 0.5;
-    
   }
 
   /****Footer*****************************************/
-.bloc_footer{
-
-}
-
-footer h3{
-    /* margin-top: 70px;
-    margin-left: 25px; */
-    /* margin-top: 51px; */
-    /* margin-left: -15px; */
-}
 
 .contact{
     margin-left: -15px;
@@ -228,8 +270,6 @@ footer h3{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    /* justify-content: center; */
-    /* margin-top: 46px; */
     margin:unset;
     background-color: #353535;
     color: white;
@@ -244,8 +284,4 @@ footer h3{
 color: white;
 text-decoration: none;
 }
-
-
-
-
 /****Footer*****************************************/
