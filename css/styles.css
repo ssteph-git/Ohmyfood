@@ -6,6 +6,12 @@ html {
     box-sizing: inherit;
   } */
 
+  /* ul li{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+} */
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -15,6 +21,9 @@ h3{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
 }
+
+
+
 
 /*Header***************************************/
 .logo {
@@ -106,6 +115,7 @@ h3{
     padding-right: 20px;
     border-radius: 35px;
     background: linear-gradient(#FF79DA, #9356DC);
+
     border: 0px;
     color: white;
     box-shadow: 0 8px 6px -6px rgb(138, 134, 134);
@@ -292,7 +302,16 @@ padding: 5px;
 .fa-solid{
     
     margin-left: -25px;
-    color: #FF79DA;
+    /* color: #FF79DA; */
+    background: linear-gradient(120deg,#FF79DA 0%, #9356DC 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* background: linear-gradient(120deg,#FF79DA 0%, #9356DC 100%);
+    background-clip: text;
+    color: transparent; */
+
     opacity: 0;
     transition: opacity 1s;
 }
@@ -337,3 +356,130 @@ color: white;
 text-decoration: none;
 }
 /****Footer*****************************************/
+
+/***Animation loading spinner*******************************/
+.chargement-ecran-vert {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0; 
+    animation: animation-fond-vert 3s;
+    animation-fill-mode: forwards;
+
+  }
+  
+  .chargement-tourner{
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #FF79DA; 
+    border-radius: 50%;
+    width: 40vw;
+    height: 40vw;
+
+    animation: animation-tourner 2s linear infinite;
+
+  }
+
+  .chargement-ecran-vert p {
+    font-size: 7vw;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    list-style-type: none;
+    color: #99E2D0;
+    /* font-size: 5vh; */
+    font-family: 'Shrikhand', cursive;
+    /* letter-spacing: 1px; */
+    animation: animation-clignotant 0.5s linear infinite;
+
+}
+
+  @keyframes animation-fond-vert {
+    0% { 
+        opacity: 1;
+        }
+
+    70%{ 
+        opacity:1 ;
+    }
+    99%{
+        
+    }
+    100% {
+         opacity: 0;
+        
+        visibility: hidden;
+     }
+  }
+
+  @keyframes animation-tourner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); 
+
+    }
+  }
+
+@keyframes animation-clignotant {
+    0%{
+        color: #99E2D0 ;
+        
+    }
+
+    10%{
+        color: white;
+        
+    }
+
+    20%{
+        color: #99E2D0 ;
+        
+    }
+
+    30%{
+        color: white;
+        
+    }
+
+    40%{
+        color: #99E2D0 ;
+        
+    }
+
+    50%{
+        color: white;
+        
+    }
+
+
+    60%{
+        color: #99E2D0 ;
+        
+    }
+
+    70%{
+        color: white;
+        
+    }
+
+    80%{
+        color: #99E2D0 ;
+        
+    }
+
+    90%{
+        color: white;
+        
+    }
+
+    100%{
+        color: #99E2D0 ;
+        
+    }
+}
+/***Animation loading spinner*******************************/
