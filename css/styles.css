@@ -33,7 +33,7 @@ h3{
 }
 
 .image_logo {
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 13px;
     max-width: 160px;
     /*reduction de l'image*/
@@ -114,6 +114,7 @@ h3{
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 35px;
+    cursor: pointer;
     background: linear-gradient(#FF79DA, #9356DC);
 
     border: 0px;
@@ -161,9 +162,9 @@ h3{
 }
   
     .choix {
-        width: 88%;
+        width: 84%;
         background-color: #F6F6F6;
-        margin-left: -15px;
+        /* margin-left: -15px; */
         border-radius: 25px;
         display: flex;
         align-items: center;
@@ -180,7 +181,7 @@ h3{
     }
   
     .question {
-        padding-left: 30px;
+        padding-left: 20px;
         margin-top: 8px;
         text-align: center;
         text-align: left;
@@ -195,9 +196,9 @@ h3{
 
 .fa-store {
     color: #9356DC;
-    margin-left: 20px;
-    font-size: 20px;
-    margin-top: 4px;
+    margin-left: 22px;
+    font-size: 16px;
+    margin-top: 8px;
 }
 
  /*----1-----------------------------------*/
@@ -208,10 +209,11 @@ h3{
   /****MENU*****************************************/
   .Bloc_Menu{
     background-color: #F6F6F6;
+    padding-bottom: 54px;
   }
 
   .Bloc_Menu h2{
-    margin-top: 65px;
+    margin-top: 68px;
     padding-top: 55px;
     margin-left: 18px;
   }
@@ -230,14 +232,15 @@ h3{
   
 /*------------Menu1-----------------------------*/
 .Menu {
-    height: 60vw;
-    width: 85%;
+    /* height: 60vw; */
+    height: 60.4vw;
+    width: 88%;
     margin: auto;
     background-color: white;
     box-shadow: rgb(153 153 153 / 32%) 0px 5px 20px;
     border-radius: 15px;
 
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 
   
@@ -257,26 +260,32 @@ h3{
 
 .etiquette{
 
-    background-color: #44b095;
-    color: #ffffff;
+    background-color: #99E2D0;
+    color: #008766;
     width: 70px;
     height: 20px;
 
     position:absolute;
-top: 10px;
-right: 10px;
+top: 12px;
+right: 12px;
 display: flex;
 justify-content: center;
+font-size: 13.5px;
+font-weight: bold;
 align-items: center;
 padding: 5px;
 }
   
 
   .titre-menu{
-      background-color: white;
-      display: flex;
-      border-radius: 15px;
-      justify-content: space-between;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    /* margin-top: 2.9px; */
+    /* margin-bottom: 20px; */
+    padding-top: 3.6px;
+    padding-bottom: 3px;
   }
 
 
@@ -328,32 +337,33 @@ padding: 5px;
 
 
   /****Footer*****************************************/
-
-.contact{
+  .contact {
     margin-left: -15px;
 }
 
-.contact .fa-utensils, .fa-hands-helping{
+.contact .fa-utensils, .fa-hands-helping {
     margin-right: 10px;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
-.contact ul{
+.contact ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    margin-top: 46px;
+    margin: unset;
     background-color: #353535;
     color: white;
 }
 
-.contact ul li{
+.contact ul li {
     display: flex;
     line-height: 25px;
 }
 
-.contact ul li a{
-color: white;
-text-decoration: none;
+.contact ul li a {
+    color: white;
+    text-decoration: none;
 }
 /****Footer*****************************************/
 
