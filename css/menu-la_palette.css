@@ -19,6 +19,20 @@ h1{
     margin-bottom: 18px;
 }
 
+h3{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+h3,.details p{
+    /*Permet remplacer le texte par des points
+     de suspension*/
+    overflow: hidden;/*cache le texte*/
+    text-overflow: ellipsis;/*ajout des 3 petits points de suspension*/
+    white-space: nowrap;/*le texte ne devient plus fexible*/
+}
+
 h4{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
@@ -92,22 +106,26 @@ flex-direction: column;
     font-size: 23.5px;
 }
 
-.fa-solid{
+.jaime .fa-solid{
     
     margin-left: -23.5px;
-    color: #FF79DA;
     opacity: 0;
     transition: opacity 1s;
+
+    background: linear-gradient(120deg,#FF79DA 0%, #9356DC 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.fa-solid:hover{
+.jaime .fa-solid:hover{
     opacity: 1;
-    /* cursor:grabbing; */
+    cursor: pointer;
 }
-
-    
-
 /**Bloc Menu**************************************/
+
+
+/**--Sous menu---------------------------------**/
 h2{
     border-bottom: 3px solid #99e2d0;
     line-height: 30px;
@@ -126,33 +144,113 @@ h2{
     margin-top: 27px;
 }
 
-/**--Sous menu---------------------------------**/
+
+
 .sous-menu{
     display: flex;
     flex-direction: column;
     margin-bottom: 62px;
 }
 
-.plat {
+.details{
+    width: 80%;
+}
+
+.details p{
+    
+    font-size: 15px;
+}
+
+.prix{
+    padding-top: 39px;
+    padding-left: 10px;
+}
+
+
+
+.plat-contenu{
     display: flex;
-    align-items: center;
+    overflow: hidden;
+    width: 100%;
     background-color: white;
-    width: 90%;
     padding-bottom: 10px;
     padding-left: 10px;
     margin: auto;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
-    animation: effet-plat 2s; /*Durée totale de l'animation*/
-    opacity: 0; /*Opacité à 0: au commencement de l'animation*/
 }
 
+.plat-validation .fa-circle-check{
+    opacity: 1;
+    color: white;
+    font-size: 25px;
+}
+/**--Sous menu---------------------------------**/
+
+
+/*----Animation entré du bloc vert----------------*/
+.plat-validation{
+    background: #99E2D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    overflow: hidden;
+    transition: width 600ms;
+}
+
+.plat:hover .plat-validation{
+    width: 20vw;
+}
+/*----Animation entré du bloc vert----------------*/
+
+/*----Animation rotation du check----------------*/
+.plat:hover .fa-circle-check{
+    animation: effet-rotation 600ms;
+}
+
+@keyframes effet-rotation {
+    0% { 
+       transform: rotate(0deg);
+        }
+
+    100% {
+         transform:rotate(360deg);
+     }
+  }
+  /*----Animation entré du bloc vert----------------*/
+
+
+
+
 /*---Animation des plats------------------------****/
+.plat {
+    display: flex;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    overflow: hidden;/*Permet que notre border-radius fonctionne pour l'ensemble des elements qui sont à l'interieur de ce bloc*/
+    box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
+    animation: effet-plat 2s;    
+}
+
+@keyframes effet-plat {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+     opacity: 1;
+     transform: translateY(0px); /*Permet de recentrer mes plats*/
+    }
+  }
+
 .plat:nth-child(2){
     animation-delay: 0.1s;/*temps où l'animation commence*/
     transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
     animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
+    /* overflow: hidden; */
 }
 
 .plat:nth-child(3){
@@ -202,40 +300,13 @@ h2{
     transform: translateY(15px); /*Déplacement de 15px de bas en haut de mon plat*/
     animation-fill-mode: forwards; /*Garde l'animation avec les valeurs de fin d'animation*/
 }
-
- @keyframes effet-plat {
-      0%{
-        opacity: 0;
-      }
-
-      100%{
-       opacity: 1;
-       transform: translateY(0px); /*Permet de recentrer mes plats*/
-      }
-    }
 /*---Animation des plats------------------------****/
 
-.details{
-    width: 80%;
-}
 
-.details p{
-    font-size: 15px;
-}
-
-h3{
-    margin-top: 12px;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-.prix{
-    padding-top: 39px;
-    padding-left: 10px;
-}
-
+/**Bouton commander**************************/
 .commander
   {
+      cursor: pointer;
     max-width: 90%;
     margin: auto;
     margin-top: 30px;
@@ -255,6 +326,7 @@ h3{
     filter: drop-shadow(0px 3px 4px black);
    opacity: 0.5;
   }
+  /**Bouton commander**************************/
 
   /****Footer*****************************************/
 
