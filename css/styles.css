@@ -209,7 +209,10 @@ h3{
   /****MENU*****************************************/
   .Bloc_Menu{
     background-color: #F6F6F6;
-    padding-bottom: 54px;
+    /* padding-bottom: 54px; */
+    padding-bottom: 50px;
+    /* padding-bottom: 43px; */
+
   }
 
   .Bloc_Menu h2{
@@ -240,13 +243,15 @@ h3{
     box-shadow: rgb(153 153 153 / 32%) 0px 5px 20px;
     border-radius: 15px;
 
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-bottom: 35px;
 }
 
   
 .image-menu {
     /* height: 95vw; */
-    height: 73%;
+    /* height: 73%; */
+    height: 74.3%;
     position: relative;
     /* width: 20vw; */
 }
@@ -438,58 +443,116 @@ padding: 5px;
 @keyframes animation-clignotant {
     0%{
         color: #99E2D0 ;
-        
     }
 
     10%{
         color: white;
-        
     }
 
     20%{
         color: #99E2D0 ;
-        
     }
 
     30%{
         color: white;
-        
     }
 
     40%{
         color: #99E2D0 ;
-        
     }
 
     50%{
         color: white;
-        
     }
 
 
     60%{
         color: #99E2D0 ;
-        
     }
 
     70%{
         color: white;
-        
     }
 
     80%{
         color: #99E2D0 ;
-        
     }
 
     90%{
         color: white;
-        
     }
 
     100%{
         color: #99E2D0 ;
-        
     }
 }
 /***Animation loading spinner*******************************/
+
+/**Media queries petits mobiles*********************/
+@media (max-width: 300px) {
+
+    .bloc_presentation{
+        width: auto;
+    }
+
+    .bloc_presentation h1{
+        margin-left: auto;
+    }
+
+    .premier_p{
+        margin-left:initial;
+    }
+
+}
+/**Media queries petits mobiles*********************/
+
+/**Media queries tablettes *********************/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    .Tous_les_menus{
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Menu{
+        height: 20vw;
+        width:auto;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .question{
+        text-align: center;
+    }
+
+
+}
+/**Media queries Tablettes*********************/
+
+
+/**Media queries PC*********************/
+@media (min-width: 900px) {
+
+    .Tous_les_menus{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Menu{
+        height: 20vw;
+        width: 30vw;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .question{
+        text-align: center;
+    }
+
+
+}
+/**Media queries PC*********************/
