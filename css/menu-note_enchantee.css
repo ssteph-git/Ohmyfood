@@ -382,12 +382,9 @@ h4 {
     color: white;
 }
 
-.contact ul li {
+.contact ul li a {
     display: flex;
     line-height: 25px;
-}
-
-.contact ul li a {
     color: white;
     text-decoration: none;
 }

@@ -126,6 +126,11 @@ h3 {
     margin-top: 25px;
 }
 
+.Tous_les_choix a {
+    color: black;
+    text-decoration: none;
+}
+
 .rond {
     border-radius: 15px;
     background-color: #9356DC;
@@ -152,7 +157,8 @@ h3 {
     box-shadow: rgb(153 153 153 / 25%) 0px 5px 9px;
 }
 
-.fond_choix {
+
+.fond_choix:hover {
     background-color: #F5EDFF;
 }
 
@@ -171,11 +177,20 @@ h3 {
 }
 
 .fa-store {
-    color: #9356DC;
+
     margin-left: 22px;
     font-size: 16px;
     margin-top: 8px;
 }
+
+.choix .fas{
+    color: #7E7E7E;
+}
+
+.choix:hover .fas{
+    color: #9356DC;
+}
+
 /**Choix****************************************************/
 
 /****MENU*****************************************/
@@ -272,7 +287,7 @@ h3 {
     margin-right: 23px;
 }
 
-.fa-solid {
+.jaime .fa-solid {
 
     margin-left: -25px;
     background: linear-gradient(120deg, #FF79DA 0%, #9356DC 100%);
@@ -284,7 +299,9 @@ h3 {
     transition: opacity 1s;
 }
 
-.fa-solid:hover {
+
+
+.jaime .fa-solid:hover {
     opacity: 1;
 }
 /****MENU*****************************************/
@@ -310,12 +327,9 @@ h3 {
     color: white;
 }
 
-.contact ul li {
+.contact ul li a {
     display: flex;
     line-height: 25px;
-}
-
-.contact ul li a {
     color: white;
     text-decoration: none;
 }
@@ -344,7 +358,6 @@ h3 {
     height: 40vw;
 
     animation: animation-tourner 2s linear infinite;
-
 }
 
 .chargement-ecran-vert p {
@@ -358,7 +371,6 @@ h3 {
     color: #99E2D0;
     font-family: 'Shrikhand', cursive;
     animation: animation-clignotant 0.5s linear infinite;
-
 }
 
 @keyframes animation-fond-vert {
